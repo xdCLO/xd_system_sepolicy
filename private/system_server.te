@@ -208,6 +208,7 @@ binder_call(system_server, binderservicedomain)
 binder_call(system_server, dumpstate)
 binder_call(system_server, fingerprintd)
 binder_call(system_server, gatekeeperd)
+binder_call(system_server, gpuservice)
 binder_call(system_server, idmap)
 binder_call(system_server, installd)
 binder_call(system_server, incidentd)
@@ -1115,6 +1116,10 @@ allow system_server apex_wifi_data_file:file create_file_perms;
 allow system_server metadata_file:dir search;
 allow system_server password_slot_metadata_file:dir rw_dir_perms;
 allow system_server password_slot_metadata_file:file create_file_perms;
+
+# Allow system server rw access to files in /metadata/staged-install folder
+allow system_server staged_install_file:dir rw_dir_perms;
+allow system_server staged_install_file:file create_file_perms;
 
 # Allow init to set sysprop used to compute stats about userspace reboot.
 set_prop(system_server, userspace_reboot_log_prop)

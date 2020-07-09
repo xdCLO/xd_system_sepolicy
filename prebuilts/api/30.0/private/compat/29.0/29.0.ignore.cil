@@ -28,6 +28,7 @@
     binderfs_logs_proc
     boringssl_self_test
     bq_config_prop
+    cacheinfo_service
     charger_prop
     cold_boot_done_prop
     credstore
@@ -43,9 +44,12 @@
     device_config_configuration_prop
     emergency_affordance_service
     exported_camera_prop
+    fastbootd_protocol_prop
     file_integrity_service
     fwk_automotive_display_hwservice
+    fusectlfs
     gmscore_app
+    graphics_config_prop
     hal_can_bus_hwservice
     hal_can_controller_hwservice
     hal_identity_service
@@ -92,7 +96,9 @@
     snapshotctl_log_data_file
     socket_hook_prop
     soundtrigger_middleware_service
+    staged_install_file
     storage_config_prop
+    surfaceflinger_display_prop
     sysfs_dm_verity
     system_adbd_prop
     system_config_service
@@ -117,6 +123,7 @@
     vendor_boringssl_self_test
     vendor_install_recovery
     vendor_install_recovery_exec
+    vendor_service_contexts_file
     vendor_socket_hook_prop
     vendor_socket_hook_prop
     virtual_ab_prop))
